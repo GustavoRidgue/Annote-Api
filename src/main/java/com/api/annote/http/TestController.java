@@ -49,6 +49,6 @@ public class TestController {
         FindAnnotationByIdResponse response = new FindAnnotationByIdResponse();
         response.setAnnotation(annotationTO);
 
-        return response;
+        return response; 
     }
 }
