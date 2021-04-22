@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = URLMapping.ROOT_API_WS_ANNOTATIONS)
+@RequestMapping(URLMapping.ROOT_API_WS_ANNOTATIONS)
 @Api(tags = "Annotations")
 @RequiredArgsConstructor
 public class AnnotationWS {

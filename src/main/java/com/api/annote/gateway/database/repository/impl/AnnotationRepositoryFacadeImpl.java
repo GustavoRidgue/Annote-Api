@@ -26,6 +26,11 @@ public class AnnotationRepositoryFacadeImpl implements AnnotationRepositoryFacad
     }
 
     @Override
+    public List<Annotation> findAll() {
+        return annotationRepository.findAll();
+    }
+
+    @Override
     public List<Annotation> findByTitle(String title) {
         return annotationRepository.findByTitle(title);
     }
