@@ -28,9 +28,7 @@ public class AnnotationWS {
     @GetMapping
     public FindAnnotationByIdResponse findById(@PathVariable(name = "id") Long id) throws AnnotationNotFoundException {
 
-        Annotation annotation = queryAnnotationById.execute(id);
-
-        AnnotationTO annotationTO = annotationBuilder.build(annotation);
+        AnnotationTO annotationTO = annotationBuilder.build(queryAnnotationById.execute(id));
 
         FindAnnotationByIdResponse response = new FindAnnotationByIdResponse();
         response.setAnnotation(annotationTO);
